@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+message Message1 {
+  string m1_field1 = 1;
+}
+
+message Message2 {
+  int32 m2_field1 = 1;
+}
+
+service DummyService {
+    rpc func(Message1) returns (Message2);
+}
